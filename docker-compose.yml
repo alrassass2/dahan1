@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  lamasat-jeddah-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: lamasat-jeddah-app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - APP_NAME=لمسات جدة للدهانات والديكورات
+      - PUBLIC_DOMAIN=https://www.1-sa.shop
+      - CONTACT_PHONE=0530077281
+      - WHATSAPP_PHONE=966530077281
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
