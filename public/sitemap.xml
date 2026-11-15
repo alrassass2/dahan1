@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.1-sa.shop/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/jeddah-painter-about.jpg</image:loc>
+      <image:title>معلم دهانات وترميم جدة - حي المروة - دهانات وديكورات وترميم وصيانة 0507478126</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/og-image.jpg</image:loc>
+      <image:title>معلم دهانات وترميم جدة - دهانات داخلية وخارجية وديكورات</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.1-sa.shop/#about</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/jeddah-painter-about.jpg</image:loc>
+      <image:title>من نحن - معلم دهانات وترميم جدة 0507478126</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.1-sa.shop/#services</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/interior-paints.jpg</image:loc>
+      <image:title>الدهانات الداخلية للمنازل والفلل والشقق في جدة</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/modern-tv-decor.jpg</image:loc>
+      <image:title>الديكورات الجدارية وبديل الخشب والرخام جدة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.1-sa.shop/#portfolio</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/luxury-majlis.jpg</image:loc>
+      <image:title>معرض أعمال دهانات وديكورات المجالس والفلل في جدة</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/bedroom-decor.jpg</image:loc>
+      <image:title>ديكورات غرف نوم وبديل الخشب جدة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.1-sa.shop/#quality</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/articles/article-1.png</image:loc>
+      <image:title>معلم دهانات وديكورات بجدة - تنفيذ داخلي وخارجي</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/articles/article-2.jpg</image:loc>
+      <image:title>دهانات وتشطيبات بجودة عالية للمنازل والفلل في جدة</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/articles/article-3.jpg</image:loc>
+      <image:title>دهان جدران وأسقف وتشطيبات داخلية للغرف والمجالس</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/articles/article-4.png</image:loc>
+      <image:title>دليل اختيار معلم دهانات وديكورات بجدة</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/articles/article-5.jpg</image:loc>
+      <image:title>تجديد وتشطيب دهانات المنازل والفلل في جدة</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.1-sa.shop/images/articles/article-6.png</image:loc>
+      <image:title>أحدث أفكار الديكور الداخلي للمنازل والفلل في جدة</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://www.1-sa.shop/#location</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+  <url>
+    <loc>https://www.1-sa.shop/#contact</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+</urlset>
