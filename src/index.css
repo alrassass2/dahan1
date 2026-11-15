@@ -1,0 +1,265 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Cairo', 'Tajawal', system-ui, -apple-system, sans-serif;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+}
+
+/* =========================================================================
+   ANIMATED TYPOGRAPHY & HEADING EFFECTS
+   تأثيرات حركية فاخرة للعناوين والخطوط والنصوص
+   ========================================================================= */
+
+@keyframes text-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* الذهبي المتلألئ المتحرك للعناوين البارزة */
+.animate-title-shimmer {
+  background: linear-gradient(
+    90deg,
+    #b45309 0%,
+    #f59e0b 25%,
+    #fbbf24 50%,
+    #d97706 75%,
+    #92400e 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 5s ease-in-out infinite;
+}
+
+/* الكحلي الملكي اللامع المتحرك */
+.animate-navy-shimmer {
+  background: linear-gradient(
+    90deg,
+    #0f2b5c 0%,
+    #1e40af 35%,
+    #0f2b5c 70%,
+    #172554 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-shimmer 6s ease-in-out infinite;
+}
+
+/* حركة التدرج الضوئي للبطاقات والعناوين الفرعية */
+@keyframes pulse-subtle-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(245, 158, 11, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 8px rgba(245, 158, 11, 0.45));
+  }
+}
+
+.animate-glow-heading {
+  animation: pulse-subtle-glow 3s ease-in-out infinite;
+}
+
+/* خط زينة متحرك تحت العناوين الرئيسية */
+@keyframes line-expand {
+  0%, 100% {
+    width: 60px;
+    opacity: 0.7;
+  }
+  50% {
+    width: 130px;
+    opacity: 1;
+  }
+}
+
+.heading-accent-glow-line {
+  height: 3.5px;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #f59e0b, #0f2b5c, #d97706);
+  background-size: 200% 100%;
+  animation: line-expand 4s ease-in-out infinite, text-shimmer 4s linear infinite;
+  margin: 10px auto 0 auto;
+}
+
+/* حركة عائمة هادئة للشارات والأيقونات */
+@keyframes float-gentle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+.animate-float-gentle {
+  animation: float-gentle 3.5s ease-in-out infinite;
+}
+
+/* Custom map pulse animations */
+@keyframes map-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+  }
+  70% {
+    transform: scale(1.08);
+    box-shadow: 0 0 0 16px rgba(239, 68, 68, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+  }
+}
+
+.map-marker-pulse {
+  animation: map-pulse 2s infinite;
+}
+
+/* Leaflet Container & Tailwind Image Compatibility */
+.leaflet-container {
+  font-family: 'Cairo', 'Tajawal', system-ui, sans-serif !important;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.leaflet-container img {
+  max-width: none !important;
+}
+
+.leaflet-pane {
+  z-index: 10 !important;
+}
+
+.leaflet-top,
+.leaflet-bottom {
+  z-index: 20 !important;
+}
+
+/* Google Maps POI Custom Label in Leaflet Marker */
+.google-maps-pin-marker,
+.custom-lamasat-pin,
+.custom-nahdi-pin {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem !important;
+  padding: 0 !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -6px rgba(0, 0, 0, 0.1) !important;
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Floating Social Icons Animation (almodh-social) */
+@keyframes almodh-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.social-float-item {
+  animation: almodh-float 3s ease-in-out infinite;
+  transition: transform 0.35s ease;
+}
+
+.social-float-item:nth-child(2) { animation-delay: 0.2s; }
+.social-float-item:nth-child(3) { animation-delay: 0.4s; }
+.social-float-item:nth-child(4) { animation-delay: 0.6s; }
+.social-float-item:nth-child(5) { animation-delay: 0.8s; }
+.social-float-item:nth-child(6) { animation-delay: 1.0s; }
+.social-float-item:nth-child(7) { animation-delay: 1.2s; }
+
+.social-float-item:hover {
+  transform: translateY(-8px) scale(1.08);
+  animation-play-state: paused;
+}
+
+.social-float-circle {
+  background-color: var(--brand, #777);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.15);
+  transition: all 0.35s ease;
+}
+
+.social-float-circle-instagram {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+
+.social-float-item:hover .social-float-circle {
+  box-shadow:
+    0 0 10px var(--brand, #777),
+    0 0 22px var(--brand, #777),
+    0 6px 15px rgba(0, 0, 0, 0.2);
+  transform: rotate(8deg);
+}
+
+.social-float-item:hover .social-float-label {
+  color: var(--brand, #777);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-float-item,
+  .social-float-circle,
+  .alrassass-gold-btn {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* =========================================================================
+   GLOWING GOLDEN DEVELOPER BUTTON (ALRASSASS)
+   ========================================================================= */
+@keyframes gold-glow-pulse {
+  0%, 100% {
+    background-position: 0% 50%;
+    box-shadow:
+      0 0 10px rgba(245, 158, 11, 0.5),
+      0 0 20px rgba(251, 191, 36, 0.28),
+      inset 0 1px 1px rgba(255, 255, 255, 0.65);
+  }
+  50% {
+    background-position: 100% 50%;
+    box-shadow:
+      0 0 16px rgba(251, 191, 36, 0.85),
+      0 0 32px rgba(245, 158, 11, 0.5),
+      inset 0 1px 2px rgba(255, 255, 255, 0.85);
+  }
+}
+
+.alrassass-gold-btn {
+  background: linear-gradient(120deg, #d97706 0%, #fbbf24 30%, #fef08a 50%, #f59e0b 75%, #b45309 100%);
+  background-size: 220% 220%;
+  animation: gold-glow-pulse 3.2s ease-in-out infinite;
+}
+
+.alrassass-gold-btn:hover {
+  transform: translateY(-1px) scale(1.03);
+  filter: brightness(1.06);
+}
